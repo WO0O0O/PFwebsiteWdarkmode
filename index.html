@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Star Wars portfolio lol</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/309c193369.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/Star-Wars-Logo-PNG-File.png" class="logo">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">ORDER 66</a></li>
+            </ul>
+            <img src="images/moon.png" id="icon">
+        </nav>
+
+        <div class="info">
+            <h1>I'm <span>Anakin</span> Skywalker </h1>
+            <p>This is where the fun begins</p>
+            <a href="">Download CV</a>
+        </div>
+
+        <div class="img-box">
+            <img src="images/R2d2-PNG-Transparent.png" class="back-img">
+            <img src="images/Anakin-Skywalker-Transparent-PNG.png" class="main-img">
+        </div>
+
+        <div class="social-links">
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+
+<script>
+
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "images/sun.png";
+        }else{
+            icon.src = "images/moon.png";
+        }
+    }
+
+</script>
+
+
+</body>
+</html>
